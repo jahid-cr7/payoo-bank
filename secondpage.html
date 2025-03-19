@@ -17,6 +17,7 @@
     </style>
     <title>Document</title>
 </head>
+
 <body class="bg-slate-800 outfit">
     <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
         <header>
@@ -48,11 +49,11 @@
                 effiecient services</p>
         </div>
         <div class="cards grid grid-cols-3 gap-3 px-3 cursor-pointer">
-            <div class="box p-4 rounded-xl shadow-lg">
+            <div id="add-money-box" class="box p-4 rounded-xl shadow-lg">
                 <img class="mx-auto mb-2 w-8" src="./assets/add.png" alt="">
                 <h3 class="text-center text-[14px]">Add Money</h3>
             </div>
-            <div class="box p-4 rounded-xl shadow-lg">
+            <div id="cash-out-box" class="box p-4 rounded-xl shadow-lg">
                 <img class="mx-auto mb-2 w-8" src="./assets/cashout.png" alt="">
                 <h3 class="text-center text-[14px]">Cash Out</h3>
             </div>
@@ -75,7 +76,7 @@
         </div>
 
         <!-- Add Money Section -->
-        <section>
+        <section id="add-money-sec">
             <div>
                 <h1 class="text-[18px] font-semibold text-center mt-6 ">Add Money</h1>
             </div>
@@ -112,8 +113,37 @@
                 </div>
             </div>
         </section>
+        <section id="cashout-sec" class="cashout">
+            <div>
+                <h1 class="text-[18px] font-semibold text-center mt-6 ">Cashout</h1>
+            </div>
+            <div>
+                <div class=" bg-gray-200">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-200 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+        
+        
+        
+                                    <label class="fieldset-label">Mobile Number</label>
+                                    <input type="number" class="input w-[340px]" placeholder="Enter Your Mobile Number" />
+                                    <label class="fieldset-label">Amount to Cashout</label>
+                                    <input id="amount" type="number" class="input w-[340px]" placeholder="Enter Amount" />
+                                    <label class="fieldset-label">Pin Number</label>
+                                    <input id="pin" type="password" class="input w-[340px]" placeholder="Password" />
+        
+                                    <button id="cashout-btn" class="btn btn-neutral mt-4">Cashout</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
     <script src="./addmoney.js"></script>
+    <script src="./toogle/toogle.js"></script>
 </body>
 
 </html>
