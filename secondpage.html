@@ -65,7 +65,7 @@
                 <img class="mx-auto mb-2 w-8 mt-4" src="./assets/getbonus.png" alt="">
                 <h3 class="text-center text-[14px]">Get Bonus</h3>
             </div>
-            <div class="box p-4 rounded-xl shadow-lg ">
+            <div id="paybill" class="box p-4 rounded-xl shadow-lg ">
                 <img class="mx-auto mb-2 w-8 mt-3" src="./assets/paybill.png" alt="">
                 <h3 class="text-center text-[14px]">PayBill</h3>
             </div>
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </section>
-<section id="transer-money-sec" class="cashout">
+        <section id="transer-money-sec" class="cashout">
     <div>
         <h1 class="text-[18px] font-semibold text-center mt-6 ">Transfer Money</h1>
     </div>
@@ -191,7 +191,52 @@
             </div>
         </div>
     </div>
-</section>
+        </section>
+        <section id="paybill-sec" class="cashout">
+            <div>
+                <h1 class="text-[18px] font-semibold text-center mt-6 ">Pay Bill</h1>
+            </div>
+            <div>
+                <div class=" bg-gray-200">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-200 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="fieldset-label">Bill Category</label>
+                                    <select name="" id=""
+                                        class="border-gray-300 p-[10px] rounded-sm w-[340px] bg-white text-gray-400">
+                                        <option value="Method" class="text-gray-200">Select Utilities</option>
+                                        <option value="Water">Water</option>
+                                        <option value="Gas">Gas</option>
+                                        <option value="Electricity">Electricity</option>
+                                        <option value="internet">Internet</option>
+                                        <option value="Property">Property Fee</option>
+                                        <option value="clean">Cleaning</option>
+        
+        
+                                    </select>
+        
+        
+                                    <label class="fieldset-label">Mobile Number</label>
+                                    <input type="number" class="input w-[340px]" placeholder="Enter Your Mobile Number" />
+        
+                                    <label class="fieldset-label">Billar ID</label>
+                                    <input type="number" class="input w-[340px]" placeholder="Enter Your Billar ID" />
+        
+                                    <label class="fieldset-label">Amount</label>
+                                    <input id="amount" type="number" class="input w-[340px]" placeholder="Enter Amount" />
+                                    <label class="fieldset-label">Pin Number</label>
+                                    <input id="pin" type="password" class="input w-[340px]" placeholder="Password" />
+        
+                                    <button id="paybill-btn" class="btn btn-neutral mt-4">Confirm</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </section>
     <script src="./addmoney.js"></script>
