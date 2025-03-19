@@ -33,17 +33,17 @@
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl px-7 my-12 py-7">
                     <div class="card-body">
                         <fieldset class="fieldset">
-                            <label class="fieldset-label font-medium text-base text-[#080808] outfit mb-1">Mobile
+                            <label class="fieldset-label font-medium text-base text-[#080808] outfit mb-1">Account
                                 Number</label>
-                            <input class="border w-72 py-3 bg-[#F4F5F7] border-none px-4 rounded-2xl outfit"
-                                type="number" class="input" placeholder="Enter Your Number" />
+                            <input id="acc-num" value="01649111696" class="border w-72 py-3 bg-[#F4F5F7] border-none px-4 rounded-2xl outfit"
+                                type="number" class="input" placeholder="Enter Your Number" required />
                             <label class="fieldset-label outfit font-medium text-base text-[#080808] mt-1 mb-1">4 Digit
                                 Pin</label>
                             <div>
-                                <input class="border w-72 py-3 bg-[#F4F5F7] border-none px-4 rounded-2xl outfit"
-                                    type="password" class="input" placeholder="Enter 4 Digit Pin" />
+                                <input id="pin" value="1234" class="border w-72 py-3 bg-[#F4F5F7] border-none px-4 rounded-2xl outfit" type="password"
+                                    class="input" placeholder="Enter 4 Digit Pin" required />
                             </div>
-                            <button class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-4xl">Login</button>
+                        <button id="login-btn" class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-4xl">Login</button>
                         </fieldset>
                     </div>
                 </div>
