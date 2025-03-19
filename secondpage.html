@@ -15,7 +15,7 @@
             font-family: "Outfit", sans-serif;
         }
     </style>
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body class="bg-slate-800 outfit">
@@ -33,7 +33,7 @@
                     </div>
                     <div>
 
-                        <button
+                        <button id="log-out"
                             class="btn bg-gray-200 border-black hover:bg-blue-400 hover:border-none hover:text-white"><i
                                 class="fa-solid fa-right-from-bracket rotate-180 mr-1"></i>Log
                             Out</button>
@@ -127,11 +127,11 @@
         
         
                                     <label class="fieldset-label">Mobile Number</label>
-                                    <input type="number" class="input w-[340px]" placeholder="Enter Your Mobile Number" />
+                                    <input type="number" class="input w-[340px]" placeholder="Enter Your Mobile Number" required />
                                     <label class="fieldset-label">Amount to Cashout</label>
-                                    <input id="amount" type="number" class="input w-[340px]" placeholder="Enter Amount" />
+                                    <input id="cashout-amount" type="number" class="input w-[340px]" placeholder="Enter Amount" required />
                                     <label class="fieldset-label">Pin Number</label>
-                                    <input id="pin" type="password" class="input w-[340px]" placeholder="Password" />
+                                    <input id="cashout-pin" type="password" class="input w-[340px]" placeholder="Password" required />
         
                                     <button id="cashout-btn" class="btn btn-neutral mt-4">Cashout</button>
                                 </fieldset>
@@ -184,7 +184,7 @@
                             <label class="fieldset-label">Pin Number</label>
                             <input id="pin" type="password" class="input w-[340px]" placeholder="Password" />
 
-                            <button id="cashout-btn" class="btn btn-neutral mt-4">Cashout</button>
+                            <button id="cashout-btn" class="btn btn-neutral mt-4">Transfer Money</button>
                         </fieldset>
                     </div>
                 </div>
@@ -239,8 +239,9 @@
 
 
     </section>
-    <script src="./addmoney.js"></script>
-    <script src="./toogle/toogle.js"></script>
+    <script src="./js/addmoney.js"></script>
+    <script src="./js/toogle.js"></script>
+    <script src="./js/cashout.js"></script>
 </body>
 
 </html>

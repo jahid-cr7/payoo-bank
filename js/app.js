@@ -11,9 +11,11 @@ document
       if (changedpin === 1234) {
         window.location.href = "./secondpage.html";
       } else {
-        console.log("Invalid Account Number and Pin");
+        alert("Enter Your Account Number And Password");
       }
     } else {
       console.log("try again");
     }
+    changedpin.value = "";
+    accountNumber.value = "";
   });

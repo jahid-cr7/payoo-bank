@@ -16,3 +16,7 @@ document.getElementById("add-btn").addEventListener("click", function (events) {
     console.log("Invalid Acoount Number And Pin");
   }
 });
+document.getElementById("log-out").addEventListener("click", function () {
+  console.log("Logout button clicked!"); // ✅ Works correctly
+  window.location.href= './index.html'
+});
