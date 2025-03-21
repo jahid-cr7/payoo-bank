@@ -35,6 +35,12 @@ document.getElementById("add-btn").addEventListener("click", function () {
     if (pin === 1234) {
       const sum = amount + mainBalance;
       setInnerTextByID("main-balance", sum);
+      const transectionContainer = document.getElementById("transection-cont");
+      const p = document.createElement("p");
+      p.innerText = `
+      BDT ${amount} added from ${account} number.
+      `;
+      transectionContainer.appendChild(p);
     } else {
       console.log("Wrong Password");
     }
@@ -44,3 +50,4 @@ document.getElementById("add-btn").addEventListener("click", function () {
 
   // console.log(amount, pin, mainBalance);
 });
+
