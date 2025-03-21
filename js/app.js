@@ -16,6 +16,4 @@ document
     } else {
       console.log("try again");
     }
-    changedpin.value = "";
-    accountNumber.value = "";
   });

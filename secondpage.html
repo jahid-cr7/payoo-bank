@@ -49,6 +49,7 @@
                 effiecient services</p>
         </div>
         <div class="cards grid grid-cols-3 gap-3 px-3 cursor-pointer">
+            
             <div id="add-money-box" class="box p-4 rounded-xl shadow-lg">
                 <img class="mx-auto mb-2 w-8" src="./assets/add.png" alt="">
                 <h3 class="text-center text-[14px]">Add Money</h3>
@@ -73,8 +74,13 @@
                 <img class="mx-auto mb-2 w-8" src="./assets/transaction.png" alt="">
                 <h3 class="text-center text-[14px]">Transection History</h3>
             </div>
+            
         </div>
-
+        <div id="select">
+            <marquee class="bg-white mt-28" behavior="alternative" direction="left">
+                <h2>Select an Option!!! Select an Option!!! Select an Option!!!</h2>
+            </marquee>
+        </div>
         <!-- Add Money Section -->
         <section id="add-money-sec">
             <div>
@@ -98,7 +104,7 @@
                                     </select>
 
                                     <label class="fieldset-label">Bank Account Number</label>
-                                    <input type="number" class="input w-[340px]" placeholder="Bank Account Number" />
+                                    <input id="acc-no" type="number" class="input w-[340px]" placeholder="Bank Account Number" />
                                     <label class="fieldset-label">Amount to Add</label>
                                     <input id="amount" type="number" class="input w-[340px]"
                                         placeholder="Enter Amount" />
@@ -239,6 +245,7 @@
 
 
     </section>
+    <script src="./utilities.js"></script>
     <script src="./js/addmoney.js"></script>
     <script src="./js/toogle.js"></script>
     <script src="./js/cashout.js"></script>
